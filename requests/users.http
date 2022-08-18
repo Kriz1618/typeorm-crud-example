@@ -8,21 +8,23 @@ POST {{api}}/users
 Content-Type: application/json
 
 {
-  "firstname": "Nando 2",
-  "lastname": "Marles"
+  "firstname": "Kriz",
+  "lastname": "Palacios",
+  "email": "krp1@yopmail.com"
 }
 
 ### get single user
-GET {{api}}/users/6
+GET {{api}}/users/9
 
 ### update single user
-PUT {{api}}/users/1
+PUT {{api}}/users/9
 Content-Type: application/json
 
 {
-  "firstname": "Kr",
-  "active": false
+  "firstname": "Kriz",
+  "active": false,
+  "email": "krp2@yopmail.com"
 }
 
 ### delete single user
-DELETE  {{api}}/users/3
+DELETE  {{api}}/users/1

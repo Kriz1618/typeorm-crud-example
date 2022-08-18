@@ -12,8 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
     "cors": "^2.8.5",
     "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "joi": "^17.6.0",
     "morgan": "^1.10.0",
     "pg": "^8.7.3",
     "readme-md-generator": "^1.0.0",

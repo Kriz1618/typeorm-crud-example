@@ -5,7 +5,9 @@ import {
     BaseEntity,
     CreateDateColumn,
     UpdateDateColumn,
+    OneToMany,
   } from "typeorm";
+import { Note } from "./Note";
   
   @Entity()
   export class User extends BaseEntity {
@@ -14,6 +16,9 @@ import {
   
     @Column()
     firstname: string;
+  
+    @Column({ unique: true })
+    email: string;
   
     @Column()
     lastname: string;
@@ -26,4 +31,11 @@ import {
   
     @UpdateDateColumn()
     updatedAt: Date;
+
+    @OneToMany(() => Note, (note) => note.user, {
+      onUpdate: 'CASCADE',
+      onDelete: 'CASCADE',
+      cascade: true,
+    })
+    notes: Note[]
   }

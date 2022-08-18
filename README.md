@@ -45,3 +45,5 @@ npm run dev
 * Close database connection `\q`
 * To test the API install the extension `REST Client`
 * Create the file `requests/users.http` and create the requests
+
+**[PSQL docs](https://www.geeksforgeeks.org/postgresql-drop-table/?ref=leftbar-rightbar)**

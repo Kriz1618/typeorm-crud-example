@@ -1,0 +1,33 @@
+
+@api = http://localhost:3000/api/notes
+
+### create a new note
+POST {{api}}
+Content-Type: application/json
+
+{
+  "title": "Note2",
+  "description": "Marles last note example",
+  "userid": 5
+}
+
+### get single note
+GET {{api}}/1
+
+### get notes
+GET {{api}}
+
+### get notes by user
+GET {{api}}/user/1
+
+### update single user
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+  "title": "Third Note",
+  "description": "Marles last note"
+}
+
+### delete notes
+DELETE {{api}}/7
